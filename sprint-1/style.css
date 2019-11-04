@@ -1,0 +1,202 @@
+
+body{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*all about cyclone*/
+
+#header{
+	background-color: #4CAF50;
+	text-align: center;
+	color: white;
+	height: 90px;
+	font-size: 25px;
+	padding: 10px;
+}
+
+#header > a{
+	color: white;
+}
+
+/*responsive*/
+
+@media(max-width: 600px){
+	#header{
+		background-color: #4DB6AC;
+		text-align: center;
+		color: red;
+		height: 70px;
+		font-size: 15px;
+		padding: 10px;
+		width: 100%;
+	}
+	.detail{
+		display: none;
+	}
+	.detail_space{
+		color: red;
+		font-size: 20px;
+		margin-left: 30px;
+		text-decoration: underline black;
+	}
+	.nope{
+		display: none;
+	}
+	
+	.content > h3{
+		color: red;
+		font-size: 22px;
+		text-align: center;
+	}
+	.footer > ul{
+		display: none;
+	}
+	#footer_alt{
+		border: 2px solid black;
+		background-color: #FFF8E1;
+	}
+	
+	ol{
+		display: grid;
+		grid-template-columns: auto auto auto auto ;
+		}
+
+	li{
+		text-style-type:circle;
+	}
+	
+	.credit_alt{
+		text-align: center;
+	}
+	.credit{
+		display: none;
+	}
+	.answer_type{
+	
+		width: 350px;
+		height: 400px;
+		padding: 30px;
+		
+	}
+	.box{
+		width: 300px;
+		height: 350px;
+		padding: 15px;
+	}
+	
+}
+/* banner*/
+
+#bgSizeContain {
+  background-image: url(https://images.unsplash.com/photo-1519519336991-cf2dc8897ffb?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=772&q=80);
+  object-fit: fill;
+}
+
+img{
+	height: 600px;
+  	width: 100%;
+} 	
+
+/*option navigation*/
+
+.nav{
+	display: flex;
+	flex-direction: column;
+	background-color: #FFE082;
+}
+
+.detail{
+	 height: 150px;
+ 	 width: 150px;
+ 	 margin-left: 200px;
+ 	 padding: 20px;
+ 	 float: left;
+}
+
+.detail_space{
+	margin-top: 40px;
+	font-size: 24px;
+
+}
+
+p{
+	font-size: 18px;
+}
+
+/*footer*/
+
+.footer{
+	border: 2px solid black;
+	background-color: #FFF8E1;
+}
+
+ul{
+	display: grid;
+	grid-template-columns: auto auto auto auto ;
+	grid-gap: 20px;
+}
+
+li{
+	list-style-type: none;
+}
+.credit{
+	text-align: center;
+}
+ol > li{
+	list-style-type: disc;
+}
+
+a{
+	text-decoration: none;
+}
+
+
+.footer a{
+	color: red;
+}
+
+/* alternate footer*/
+#footer_alt{
+	display: none;
+}
+
+/*heading of paragraph*/
+
+.ans_title{
+	text-align: center;
+}
+
+/*image container*/
+
+.answer_type{
+	display: flex;
+	flex-direction: row;
+	height: 500px;
+}
+.box{
+	
+	width: 350px;
+	height: 400px;
+	padding: 60px;
+	padding-left: 90px;
+}
+
+figcaption {
+    background-color: #222;
+    color: #fff;
+    text-align: center;
+}
+
+/*paragraph*/
+.content{
+	margin-top: 100px;
+}
+
+
+/* alternate paragraph*/
+
+.content2{
+	margin-top: 70px;
+}
+
