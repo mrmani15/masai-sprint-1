@@ -1,7 +1,9 @@
 import React, { Component } from 'react'
 import Background from './background'
+import {connect} from "react-redux"
+import { getNameFromUser } from '../Redux/Action'
 
-export default class Search extends Component {
+class Search extends Component {
     constructor(props) {
         super(props)
     
@@ -16,6 +18,7 @@ export default class Search extends Component {
     }
     handleClick = () => {
         console.log(this.state.name)
+        this.props.sendName(this.state)
     }
     render() {
         return (
@@ -25,3 +28,10 @@ export default class Search extends Component {
         )
     }
 }
+
+const mapDispatchToProps = (dispatch) => ({
+    sendName : (name) => dispatch(getNameFromUser(name))
+})
+
+
+export default connect(null, mapDispatchToProps) (Search)
