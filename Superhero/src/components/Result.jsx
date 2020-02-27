@@ -10,7 +10,7 @@ class Result extends Component {
         }
     }
     render() {
-        console.log(this.props.name)
+        console.log(this.props.name.name.data)
         return (
             <div>
                 
