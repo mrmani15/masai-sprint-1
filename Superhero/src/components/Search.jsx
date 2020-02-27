@@ -2,13 +2,15 @@ import React, { Component } from 'react'
 import Background from './background'
 import {connect} from "react-redux"
 import { getNameFromUser } from '../Redux/Action'
+import axios from "axios"
 
 class Search extends Component {
     constructor(props) {
         super(props)
     
         this.state = {
-             name:""
+             name:"",
+             data:""
         }
     }
     handleChange = (e) => {
@@ -17,7 +19,15 @@ class Search extends Component {
         })
     }
     handleClick = () => {
-        console.log(this.state.name)
+        const inputname = this.state.name
+        axios.get("https://superheroapi.com/api/2506168482827839/search/" + inputname)
+        .then(res => {
+            // console.log(res)
+            this.setState({
+                data: res
+            })
+        })
+        .catch(err => console.log(err.message))
         this.props.sendName(this.state)
     }
     render() {

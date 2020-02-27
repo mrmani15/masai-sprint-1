@@ -6,7 +6,7 @@ class Result extends Component {
         super(props)
     
         this.state = {
-             
+
         }
     }
     render() {
@@ -20,9 +20,9 @@ class Result extends Component {
 }
 
 const mapStateToProps = (state) => ({
-    name:state.name
+    name:state
 })
 
 
 
-export default connect (mapStateToProps,{})(Result)
+export default connect (mapStateToProps,null)(Result)
