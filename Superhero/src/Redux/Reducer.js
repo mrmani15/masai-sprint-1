@@ -1,15 +1,15 @@
-import { GET_NAME } from "./Action"
+import { GET_DATA } from "./Action"
 
 const initialstate = {
-    name:""
+    data:""
 }
 
 const reducer = (state = initialstate, action) => {
     switch(action.type){
-        case GET_NAME :
+        case GET_DATA :
             return{
                 ...state,
-                name: action.payload
+                data: action.data
             }
         default :
             return state

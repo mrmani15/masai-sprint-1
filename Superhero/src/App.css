@@ -2,13 +2,13 @@
   .my-img {
     background: url("./background.png") no-repeat center center/cover;
     width: 100VW !important;
-    height: 50vh !important;
+    height: 30vh !important;
   }
 
 
 .overlay {
   background: rgb(87, 78, 78) !important;
-  height: 50vh;
+  height: 30vh;
   width: 100vw;
   opacity: .6;
 }

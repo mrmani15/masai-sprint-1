@@ -1,6 +1,6 @@
-export const GET_NAME = "GET_NAME"
+export const GET_DATA = "GET_DATA"
 
-export const getNameFromUser = (payload) => ({
-    type : GET_NAME,
-    payload
+export const getDataFromUser = (data) => ({
+    type : GET_DATA,
+    data
 })
