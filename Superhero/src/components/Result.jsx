@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import { connect } from 'react-redux'
+import {Route, BrowserRouter as Router, Link} from "react-router-dom"
 
 class Result extends Component {
     constructor(props) {
