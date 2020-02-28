@@ -20,7 +20,6 @@ class Result extends Component {
                     <div className="row">
                         {data.map(ele => {
                             return(
-                                
                                 <div className="col-4 mt-5 mb-5">
                                     <div className="card" style={{width: "16rem"}}>
                                         <img src={ele.image.url} className="card-img-top" alt="..."/>
