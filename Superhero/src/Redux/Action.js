@@ -1,6 +1,8 @@
-export const GET_DATA = "GET_DATA"
+export const ALL_DATA = "ALL_DATA";
 
-export const getDataFromUser = (data) => ({
-    type : GET_DATA,
-    data
-})
+export const getDataFromUser = (data) => {
+    return{
+        type :ALL_DATA,
+        data
+    }
+}

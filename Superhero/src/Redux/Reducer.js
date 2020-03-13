@@ -1,19 +1,17 @@
-import { GET_DATA } from "./Action"
-
-const initialstate = {
-    data:""
+import { ALL_DATA } from './Action';
+ 
+const initialState = {
+    data:{}
 }
 
-const reducer = (state = initialstate, action) => {
-    switch(action.type){
-        case GET_DATA :
+export const Reducer = (state = initialState, Action) =>{
+    switch(Action.type){
+        case ALL_DATA:
             return{
                 ...state,
-                data: action.data
+                data:[Action.data]
             }
-        default :
+        default:
             return state
     }
 }
-
-export default reducer

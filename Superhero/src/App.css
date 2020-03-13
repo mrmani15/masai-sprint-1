@@ -15,7 +15,7 @@
 
 .titleName{
   font-family: Yeon Sung;
-  font-size:50px ;
+  font-size:50px;
   font-weight: bold;
   color: orange;
 }
@@ -26,7 +26,6 @@
 }
 .inputBox {
   height: 100%;
-  
   display: flex;
   justify-content: center;
   align-items: center;

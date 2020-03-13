@@ -10,7 +10,7 @@ class Search extends Component {
     
         this.state = {
              name:"",
-             data:[]
+             data:{}
         }
     }
     handleChange = (e) => {
@@ -24,7 +24,7 @@ class Search extends Component {
         .then(res => {
             this.setState({
                 data:res.data.results
-            },()=> {this.props.sendData(this.state)})
+            },()=> {this.props.sendData(this.state.data)})
             
         })
         .catch(err => console.log(err.message))
