@@ -1,6 +1,4 @@
 	
-
-
 	function itemselected(){
 		item_sel = document.getElementById("items").value
 		var item_select = document.createElement("p")
