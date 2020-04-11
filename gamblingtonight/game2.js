@@ -5,7 +5,7 @@
 	document.getElementById("point").innerHTML = coin;
 
 	var stake = parseInt(document.getElementById('staked').value);
-	
+
 	function staking(){
 		event.preventDefault()
 		var stake = parseInt(document.getElementById('staked').value);
@@ -23,13 +23,13 @@
 	function whenclick(){
 		option1 = document.getElementById("choice").value
 		document.getElementById("choice").style.background = "red";
-		
+
 	}
 	function ifclick(){
 		option1 = document.getElementById("choice1").value
 		document.getElementById("choice1").style.background = "red";
 	}
-	
+
 
 	function result(){
 
@@ -40,23 +40,24 @@
 			var out = random_item(items);
 
 			var stake = parseInt(document.getElementById('staked').value);
-		
-		if(out == option1){
-			alert("Congrates! You Predict The Right One \n You doubled your stake")
-			var earn = stake * 2
-			var coinupdate = coin + earn
-			document.getElementById("point").innerHTML = coinupdate;
-			coin = coinupdate;
-		}
-		else{
-			alert("Oops! Better Luck Next Time \n You Loose your stake")
-		}
-		
+
+			if(out == option1){
+				alert("Congrates! You Predict The Right One \n You doubled your stake")
+				var earn = stake * 4
+				var coinupdate = coin + earn
+				document.getElementById("point").innerHTML = coinupdate;
+				coin = coinupdate;
+			}
+			else if(coin == 0){
+				alert("You Loose!!");
+				window.location.href = "index.html";
+			}
+			else if(out != option1){
+				alert("Oops! Better Luck Next Time \n You Loose your stake")
+			}
+
 		document.getElementById("choice").style.background = "green";
 		document.getElementById("choice1").style.background = "green";
 		document.getElementById('staked').value = ""
 
 	}
-
-
-

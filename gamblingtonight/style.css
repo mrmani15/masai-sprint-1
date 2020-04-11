@@ -1,3 +1,4 @@
+
 #mainblock{
 	width:50%;
 	height: 100%;
@@ -83,7 +84,8 @@ h2{
 }
 #staked{
 	margin-top: 80px;
-	margin-left: 5px;
+	margin:auto;
+	margin-top: 8%;
 	text-align: center;
 	font-size: 15px;
 }
@@ -113,14 +115,11 @@ h2{
 	background-color: black;
 	color: white;
 }
-#extra{
-	font-size:15px;
-}
+
 .choice{
 	font-size: 15px;
-	/* display: flex;
-	flex-direction: column;
-	item-align:center; */
+	display: flex;
+	justify-content: space-around;
 }
 p{
 	font-size: 15px;
