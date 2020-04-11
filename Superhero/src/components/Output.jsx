@@ -17,9 +17,8 @@ class Output extends Component {
   render() {
     const data = this.props.data.data[0];
     const id = this.props.match.params.id;
-    const val = data.filter((ele) => ele.id == id );
+    const val = data.filter((ele) => ele.id === id );
     const value = val[0]
-    console.log(value.appearance.height[0])
     return (
       <div className="container">
         <div className="row">

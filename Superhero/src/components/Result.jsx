@@ -14,7 +14,6 @@ class Result extends Component {
     render() {
         
         const data = this.props.data.data[0]
-        console.log(this.props.data.data[0])
         return(
             data !== undefined ? (
                 <div className="container">
@@ -38,7 +37,7 @@ class Result extends Component {
                     </div>
                 </div>
             )
-            :(<center><h2>Enter superhero name and wait..</h2></center>)
+            :(<center><h2>Enter superhero name and wait..</h2><h3>Please Enable CORS</h3></center>)
         )
     }
 }
