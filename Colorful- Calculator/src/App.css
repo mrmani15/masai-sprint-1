@@ -1,0 +1,82 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+.Output {
+  height: 80px;
+  width: 400px;
+  border: 2px solid black;
+  margin: auto;
+}
+.mainDiv {
+  border: 2px solid black;
+  margin: auto;
+  height: 300px;
+  width: 400px;
+  margin-top: 5px;
+  display: flex;
+}
+.numberInput {
+  width: 300px;
+  border-right: 2px solid black;
+  height: 300px;
+}
+.number {
+  width: 90px;
+  height: 90px;
+  border: 1px solid blue;
+}
+.horizon {
+  display: flex;
+  justify-content: space-around;
+  padding-top: 5px;
+}
+.operatorDiv {
+  width: 90px;
+  height: 55px;
+  border: 1px solid blue;
+}
+.vertical {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  margin-left: 3px;
+}
+.center {
+  margin: auto;
+  padding-top: 12px;
+}
+.centerNum {
+  margin: auto;
+  padding-top: 30px;
+}
+.btn {
+  margin-bottom: 10px;
+  height: 30px;
+  width: 55px;
+  background-color: grey;
+  color: black;
+  font-size: 15px;
+  margin-left: 10px;
+}
+.left-corner {
+  float: left;
+  color: red;
+  background-color: black;
+}
+.popover {
+  position: absolute;
+  z-index: "2";
+  margin-top: 45px;
+}
+.popoverout {
+  position: absolute;
+  z-index: "2";
+  margin-top: 25px;
+}
+.topdown {
+  display: flex;
+  justify-content: space-around;
+  height: 40px;
+  padding-top: 10px;
+}

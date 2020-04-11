@@ -1,0 +1,48 @@
+*{
+  margin:0px;
+  padding:0px;
+}
+body{
+  background-color: #f4f4f4;
+}
+h2{
+  color: green;
+  padding:10px;
+  text-decoration: underline red;
+}
+.container{
+  border: 2px solid black;
+  padding:5px;
+  width:75%;
+  margin: 1em auto;
+}
+.input-box{
+  width:40%;
+  border: 1px solid black;
+  border-radius: 5px;
+  height:30px;
+  margin-bottom: 10px;
+}
+.submit-btn{
+  height: 30px;
+  width: 40px;
+  background-color: seagreen;
+  color:white;
+  margin: 5px;
+}
+li{
+  list-style: none;
+  background-color: lightgrey;
+  margin: 5px;
+  height:35px;
+  font-size: 20px;
+  padding-left: 1em;
+  padding-top: 0.5em;
+}
+.del{
+  background-color: red;
+  width: 25px;
+  height: 25px;
+  float: right;
+  margin-right: 10px;
+}

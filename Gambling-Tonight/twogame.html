@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gambling Tonight</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div id="mainblock">
+		<!--header-->
+		<h2>Gambling Tonight</h2>
+		<!--content-->
+		<div>
+			<div id="print_naam">
+				<p></p>
+			</div>
+
+			<div id="point"></div>
+		</div>
+
+		<center>
+			<input type="text" name="coin" id="staked" placeholder="Place your Stake" value="0"><br><br>
+			<button onclick="staking()">Staked</button>
+		</center>
+
+		<div id="toss">
+			<p>Make your Prediction Here</p>
+			<button id="choice" class="choose" onclick="whenclick()" value="Head">Head</button>
+			<button id="choice1" class="choose" onclick="ifclick()" value="Tail">Tail</button>
+			<br>
+			<button onclick="result()" class="resultbtn">Flip A Coin</button>
+		</div>
+
+		<!--footer-->
+		<div class="footer">All Right Reserve to <b>Mr. MANI</b>
+		</div>
+	</div>
+	<script src="game2.js"></script>
+</body>
+</html>

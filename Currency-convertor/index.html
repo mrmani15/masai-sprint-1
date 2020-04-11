@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Currency convertor</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+	<!--mainbody-->
+	<div class="top">
+			<!--header-->
+			<p>Currency Convertor</p>
+	</div>
+		<!--body-->
+	<div class="content">
+		<center>
+		<h3>Convert your currency in terms of American Dollor</h3>
+
+		<select class="selector">USD
+			<option>USD</option>
+			<option>INR</option>
+		</select>
+
+		<h4 class="to"> to <h4>
+
+		<input type="text" name="code" id="code" placeholder="enter your country code"><br>
+
+		<button id="btn" onclick="clicked()">Convert</button>
+
+		<div id="result">
+
+		</div>
+		<br>
+
+		<a href="https://www.iban.com/currency-codes">List for country codes</a>
+	</center>
+	</div>
+	<script src="acton.js"></script>
+</body>
+</html>
