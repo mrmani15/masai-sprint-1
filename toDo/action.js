@@ -20,6 +20,7 @@ function addingItem(e){
   newItem.appendChild(btn);
   var ul = document.getElementById('list');
   ul.appendChild(newItem)
+  document.getElementById('input-field').value = ""
 }
 
 function removeItem(e){
