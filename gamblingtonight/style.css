@@ -24,16 +24,17 @@ h2{
 }
 
 #input_name{
-	margin-left: 225px;
 	margin-top: 10px;
+	display: flex;
+	justify-content: center;
 }
 .btn{
-	margin-left: 65px;
+	display: flex;
+	justify-content: space-around;
 }
 
 .btn_cat{
-	font-size: 30px;
-	margin-left: 50px;
+	font-size: 20px;
 }
 
 .next_btn{
@@ -112,10 +113,15 @@ h2{
 	background-color: black;
 	color: white;
 }
-#extra .choice{
+#extra{
 	font-size:15px;
 }
-
+.choice{
+	font-size: 15px;
+	/* display: flex;
+	flex-direction: column;
+	item-align:center; */
+}
 p{
 	font-size: 15px;
 	text-align: center;
