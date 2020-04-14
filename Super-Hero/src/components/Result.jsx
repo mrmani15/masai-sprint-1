@@ -37,7 +37,7 @@ class Result extends Component {
                     </div>
                 </div>
             )
-            :(<center><h2>Enter superhero name and wait..</h2><h3>Please Enable CORS</h3></center>)
+            :(<center><h2>Enter superhero name and wait..</h2></center>)
         )
     }
 }

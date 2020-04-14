@@ -20,7 +20,7 @@ class Search extends Component {
     }
     handleClick = () => {
         const inputname = this.state.name
-        axios.get("https://superheroapi.com/api/2506168482827839/search/" + inputname)
+        axios.get("/api/2506168482827839/search/" + inputname)
         .then(res => {
             this.setState({
                 data:res.data.results
